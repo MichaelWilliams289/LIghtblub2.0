@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    text-align: center;
+    background-color: #000057; /* Default background color */
+    color: white; /* Default text color */
+  }
+  #myImage {
+    display: block;
+    margin: 0 auto;
+  }
+  h1, p {
+    text-align: center;
+    color: white; /* Text color for h1 and p elements */
+  }
+</style>
+</head>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="https://www.w3schools.com/js/pic_bulboff.gif" width="100" height="180">
+
+<h1>Michael Williams</h1>
+<p>
+  I'm a 14-year-old aspiring Software Engineer with a deep passion for gaming. Currently, my favorite video game is Stalker: Shadow of Chernobyl, and I'm fully immersed in its challenges, constantly striving to overcome them. This game has inspired me so much that I've begun developing a Stalker mod. Although I'm still refining the concept, I'm thrilled about the creative journey and the potential to create something truly captivating. My ultimate dream is to become a game developer, and this project marks a significant step towards achieving that goal.
+  <br/><br/>
+  Additionally, I am learning C++. I know how to handle input and work with string variables, but I am still struggling with some aspects. However, I am determined and will never give up. also planing to join Imesense Which is a programmer group and make the ixray-engine  which is Stable repository of the modernized X-Ray 1.6 game engine   and it the reason why i learning c++ which i buff up my experance in programming if you curious about it <a  href="https://github.com/ixray-team/ixray-1.6-stcop">Ixray-engine 1.6</a>
+</p>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  var body = document.body;
+  if (image.src.match("bulbon")) {
+    image.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    body.style.backgroundColor = "#000057"; // Set to default background color
+    body.style.color = "white"; // Set text color to white
+  } else {
+    image.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    body.style.backgroundColor = "black"; // Set to desired background color when light is on
+    body.style.color = "black"; // Set text color to black
+  }
+}
+</script>
+
+</body>
+</html>
